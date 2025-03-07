@@ -359,3 +359,11 @@ trap '__vsc_preexec_all "$_"' DEBUG
 __vsc_original_prompt_command=${PROMPT_COMMAND:-}
 git status
 git add .
+git branch
+git checkout main
+git status
+git push origin main
+git fetch origin
+git pull origin main --rebase
+git status
+git add .
