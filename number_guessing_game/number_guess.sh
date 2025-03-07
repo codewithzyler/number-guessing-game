@@ -81,4 +81,4 @@ USER_ID_RESULT=$($PSQL "SELECT user_id FROM players WHERE username='$USERNAME'")
 INSERT_GAME_RESULT=$($PSQL "INSERT INTO games(user_id, secret_number, number_of_guesses) VALUES ($USER_ID_RESULT, $SECRET_NUMBER, $GUESS_COUNT)")
 
 # winning message
-echo You guessed it in $GUESS_COUNT tries. The secret number was $SECRET_NUMBER. Nice job\!
+echo You guessed it in $GUESS_COUNT tries. The secret number was $SECRET_NUMBER. Nice job\!echo 'Bug fix applied'
